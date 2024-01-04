@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --whitish: #fafafa;
+  --pinck: #d9b8ff;
+  --LightBlue: #8fe3f9;
+  --grayish: #87879d;
+  --dark: #28283d;
+  --purple: #855fb1;
+  --darkGreen: #4d96a9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 61px;
+}
+
+.groupSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.groupImageDesktop {
+  max-width: 394px;
+}
+
+.groupImageTablet-PhoneBackground {
+  display: none;
+  max-width: 820px;
+}
+
+.groupImageTablet-PhoneBackground img {
+  width: 100%;
+}
+
+.groupImageDesktop img {
+  width: 100%;
+}
+
+.groupchatTitle-download {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 47px;
+}
+
+.groupTitle {
+  text-align: center;
+  font-size: 64px;
+  color: var(--dark);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  line-height: 64px;
+  max-width: 455px;
+}
+
+.grouphParagraph {
+  text-align: center;
+  margin-top: 34px;
+  font-size: 18px;
+  color: var(--grayish);
+  line-height: 26px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  max-width: 540px;
+}
+
+.groupBtns {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.groupBtns {
+  border: none;
+}
+
+button {
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.downloadBtn {
+  width: 193px;
+  height: 58px;
+  border-radius: 29px;
+  background: #4d96a9;
+}
+.downloadSpan {
+  margin-right: 4px;
+}
+.versionSPan {
+  color: var(--LightBlue);
+}
+
+.aboutBtn {
+  width: 139px;
+  height: 58px;
+  border-radius: 29px;
+  background: #855fb1;
+  margin-left: 16px;
+}
+
+.first {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 29px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  background-color: var(--whitish);
+  margin: 201px auto 0 auto;
+  font-size: 16px;
+  color: var(--grayish);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+}
+
+.first::before {
+  content: "";
+  position: absolute;
+  top: -153%;
+  width: 1px;
+  height: 84px;
+  opacity: 0.25;
+  background-color: var(--grayish);
+}
+
+.meetingsSection {
+  margin-top: 64px;
+}
+
+.meetingsImages {
+  display: flex;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.meetingImgPar {
+  flex-basis: 25%;
+  margin: 0 15px;
+}
+
+.meetingImgPar img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.meetingTitle-Description {
+  margin-top: 80px;
+}
+
+.useText {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: var(--darkGreen);
+  text-transform: uppercase;
+}
+
+.mettingTitle {
+  text-align: center;
+  max-width: 445px;
+  font-size: 40px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: var(--dark);
+  margin: 16px auto 0 auto;
+  line-height: 44px;
+}
+
+.mettingParagraph {
+  max-width: 540px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--grayish);
+  margin: 32px auto 0 auto;
+  padding: 0 16px;
+}
+
+footer {
+  position: relative;
+  background-image: url(../assets-images/desktop/image-footer.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  margin-top: 184px;
+  padding: 116px 0px 104px 0px;
+  width: 100%;
+}
+
+.secondPar {
+  position: absolute;
+  top: -25px;
+  z-index: 10;
+}
+
+.second {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 29px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  background-color: var(--whitish);
+  font-size: 16px;
+  color: var(--grayish);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+}
+
+.second::before {
+  content: "";
+  position: absolute;
+  top: -153%;
+  width: 1px;
+  height: 84px;
+  opacity: 0.25;
+  background-color: var(--grayish);
+}
+
+footer::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4d97a9da;
+  z-index: 1;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  width: 1110px;
+}
+
+.footerTitle {
+  position: relative;
+  z-index: 10;
+  font-size: 40px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: var(--whitish);
+  max-width: 350px;
+  margin-right: 125px;
+}
+
+.footerParagraph {
+  width: 350px;
+  position: relative;
+  z-index: 10;
+  font-size: 18px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--whitish);
+  margin-right: 92px;
+}
+
+.downloadBtn {
+  position: relative;
+  z-index: 10;
+}
+
+.footerDownloadBtn {
+  background-color: var(--purple);
+}
+.footerDownloadBtn .versionSPan {
+  color: var(--pinck);
+}
+
+@media screen and (max-width: 1140px) {
+  .groupTitle {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 1112px) {
+  .footerContent {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 0;
+  }
+
+  .footerTitle {
+    text-align: center;
+    margin-right: 0;
+  }
+  .footerParagraph {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .footerContent {
+    gap: 40px 0;
+  }
+  .footerParagraph {
+    width: 573px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+}
+
+@media screen and (max-width: 880px) {
+  .grouphParagraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .groupImageDesktop {
+    display: none;
+  }
+
+  .groupSection {
+    justify-content: center;
+  }
+
+  .groupImageTablet-PhoneBackground {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .meetingsImages {
+    flex-wrap: wrap;
+  }
+
+  .meetingImgPar {
+    flex-basis: 50%;
+    margin: 0px !important;
+    padding: 15px 15px;
+  }
+
+  .groupBtns {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .aboutBtn {
+    margin-left: 0px;
+  }
+  .footerParagraph {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mettingTitle {
+    font-size: 32px;
+  }
+
+  .footerTitle {
+    max-width: 300px;
+    font-size: 32px;
+  }
+}
